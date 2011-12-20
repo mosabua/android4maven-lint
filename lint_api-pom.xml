@@ -63,7 +63,7 @@
     <dependencies>
         <dependency>
             <groupId>com.android.tools</groupId>
-            <artifactId>ddmlib</artifactId>
+            <artifactId>common</artifactId>
             <version>@VERSION@</version>
         </dependency>
         <dependency>
@@ -80,18 +80,6 @@
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm</artifactId>
             <version>4.0</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.2</version> <!-- see external/junit/version -->
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <version>2.5.2</version> <!-- see git log of external/easymock -->
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

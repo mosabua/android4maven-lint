@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.android.tools</groupId>
-    <artifactId>lint_checks</artifactId>
+    <artifactId>androidprefs</artifactId>
     <version>@VERSION@</version>
     <packaging>jar</packaging>
 
@@ -12,8 +12,8 @@
         <version>7</version>
     </parent>
 
-    <name>Google Android Tools lint_checks</name>
-    <description>The checks for the lint tool for Android.</description>
+    <name>Google Android Tools androidprefs</name>
+    <description>Preference classes from the Android SDK.</description>
     <url>http://tools.android.com/</url>
     <inceptionYear>2008</inceptionYear>
     <licenses>
@@ -57,31 +57,5 @@
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.android.tools</groupId>
-            <artifactId>common</artifactId>
-            <version>@VERSION@</version>
-        </dependency>
-        <dependency>
-            <groupId>com.android.tools</groupId>
-            <artifactId>lint_api</artifactId>
-            <version>@VERSION@</version>
-        </dependency>
-        <dependency>
-            <groupId>com.android.tools</groupId>
-            <artifactId>androidprefs</artifactId>
-            <version>@VERSION@</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.2</version> <!-- see external/junit/version -->
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
 </project>

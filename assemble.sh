@@ -12,7 +12,7 @@ fi
 currentDir=`$readlink -f $(dirname $0)`
 echo "Working in $currentDir"
 
-codeLocation=$ANDROID_SOURCE_SDK/$location/
+codeLocation=$ANDROID_SOURCE_SDK/$location
 echo "Building code in $codeLocation"
 
 pomLocation=$currentDir/$name-pom.xml
@@ -31,7 +31,9 @@ echo "Copying source files to $projectSrc"
 cp -r $codeLocation/src/com $projectSrc
 
 echo "Copying test files to $projectTest"
-cp -r $codeLocation/tests/src/com $projectTest
+if [ -d " $codeLocation/tests/src/com" ]; then
+    cp -r $codeLocation/tests/src/com $projectTest
+fi
 
 echo "Copying in pom file ($pomLocation)"
 cp $pomLocation $projectRoot/pom.xml
