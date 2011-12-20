@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.google.android.tools</groupId>
-	<artifactId>ddmlib</artifactId>
+	<artifactId>lint</artifactId>
 	<version>@VERSION@</version>
 	<packaging>jar</packaging>
 
@@ -12,8 +12,8 @@
 		<version>7</version>
 	</parent>
 
-	<name>Google Android Tools ddmlib</name>
-	<description>A ddmlib jar that provides APIs for talking with Dalvik VM (both on Android phones and emulators).</description>
+	<name>Google Android Tools lint</name>
+	<description>The lint tool for Android development.</description>
 	<url>http://tools.android.com/</url>
 	<inceptionYear>2008</inceptionYear>
 	<licenses>
