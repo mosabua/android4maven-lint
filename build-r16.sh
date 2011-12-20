@@ -5,6 +5,5 @@ source ./assemble.sh common common
 source ./assemble.sh androidprefs androidprefs
 source ./assemble.sh lint_api lint/libs/lint_api
 source ./assemble.sh lint_checks lint/libs/lint_checks
-#source ./assemble.sh lint lint/cli
-
-# TODO add ddmlib as well
+source ./assemble.sh lint lint/cli
+source ./assemble.sh ddms ddms/libs/ddmlib
