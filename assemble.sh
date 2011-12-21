@@ -37,6 +37,7 @@ fi
 
 echo "Copying in pom file ($pomLocation)"
 cp $pomLocation $projectRoot/pom.xml
+echo "Modifying POM (version=$ANDROID_SDK_VERSION, branch=$GIT_BRANCH, rev=$GIT_REV)"
 perl -pi -e "s/\@VERSION\@/$ANDROID_SDK_VERSION/" $projectRoot/pom.xml
 perl -pi -e "s/\@GIT_BRANCH\@/$GIT_BRANCH/" $projectRoot/pom.xml
 perl -pi -e "s/\@GIT_COMMIT\@/$GIT_REV/" $projectRoot/pom.xml

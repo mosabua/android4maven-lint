@@ -21,14 +21,14 @@ echo "Using SDK source in $ANDROID_SOURCE_SDK"
 export GIT_BRANCH="tools_$ANDROID_SDK_VERSION"
 
 echo "Checking out $GIT_BRANCH in $ANDROID_SOURCE_SDK"
-cd $ANDROID_SOURCE
-#git checkout --quiet korg/$gitBranch
+cd $ANDROID_SOURCE_SDK
+git checkout aosp/$GIT_BRANCH
 
-#export GIT_REV=`git --git-dir=$sdkLocation/.git rev-parse HEAD`
-#echo "Git rev: $GIT_REV"
+export GIT_REV=`git --git-dir=$ANDROID_SOURCE_SDK/.git rev-parse HEAD`
+echo "Git rev: $GIT_REV"
 
 echo "Starting to build Android SDK"
-#lunch sdk-eng
-#make sdk
+lunch sdk-eng
+make sdk
 
 cd $currentDir
