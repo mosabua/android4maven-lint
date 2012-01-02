@@ -16,7 +16,7 @@ codeLocation=$ANDROID_SOURCE_SDK/$location
 echo "Building code in $codeLocation"
 
 pomLocation=$currentDir/$name-pom.xml
-projectRoot=$currentDir/project-$name-$ANDROID_SDK_VERSION
+projectRoot=$currentDir/target/project-$name-$ANDROID_SDK_VERSION
 projectSrc=$projectRoot/src/main/java
 projectTest=$projectRoot/src/test/java
 
