@@ -42,7 +42,7 @@ jar -xf $assembledJar
 cd $workDir
 
 echo "Writing diff to target/$diffList"
-diff -r $originalJarExtracted $assembledJarExtracted >target/$diffList
+diff -r "$originalJarExtracted" "$assembledJarExtracted" >"target/$diffList" || [ $? -eq 1 ]
 
 #TODO somehow script does not continue after diff command??" 
 

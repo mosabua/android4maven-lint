@@ -12,11 +12,10 @@ source ./assemble.sh ddmlib ddms/libs/ddmlib
 export ANDROID_SDK_BUILD_OUTPUT=$ANDROID_SOURCE/out/host/darwin-x86/sdk/android-sdk_eng.manfred_mac-x86/
 
 source ./compare.sh common tools/lib/
-
-#source ./compare.sh androidprefs tools/lib/
-#source ./compare.sh lint_api tools/lib/
-#source ./compare.sh lint_checks tools/lib/
-#source ./compare.sh lint tools/lib/
-#source ./compare.sh ddmlib tools/lib/
+source ./compare.sh androidprefs tools/lib/
+source ./compare.sh lint_api tools/lib/
+source ./compare.sh lint_checks tools/lib/
+source ./compare.sh lint tools/lib/
+source ./compare.sh ddmlib tools/lib/
 
 
