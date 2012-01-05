@@ -29,8 +29,8 @@
         </license>
     </licenses>
     <scm>
-        <url>https://android.git.kernel.org/</url>
-        <connection>git://android.git.kernel.org/platform/manifest.git</connection>
+        <url>https://android.googlesource.com/</url>
+        <connection>https://android.googlesource.com/platform/manifest.git</connection>
     </scm>
     <developers>
         <developer>
@@ -38,8 +38,6 @@
         </developer>
     </developers>
 
-    <!-- Since SDK Tools aren't properly tagged in git, these artifacts were built from the tip of a specific branch
-         in particular point in time. This is the information about which specific branch and commit it was. -->
     <properties>
         <branch>@GIT_BRANCH@</branch>
         <commit>@GIT_COMMIT@</commit>
@@ -52,8 +50,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>1.5</source>
                     <target>1.5</target>
+		    <debug>false</debug>
                 </configuration>
             </plugin>
         </plugins>
