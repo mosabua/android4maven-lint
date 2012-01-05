@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 UNAME=`uname -s`
@@ -42,14 +41,13 @@ jar -xf $assembledJar
 cd $workDir
 
 echo "Writing diff to target/$diffList"
-diff -r "$originalJarExtracted" "$assembledJarExtracted" >"target/$diffList" || [ $? -eq 1 ]
-
-#TODO somehow script does not continue after diff command??" 
+diff -r "$originalJarExtracted" "$assembledJarExtracted" > "target/$diffList" || [ $? -eq 1 ]
+#TODO somehow script does not continue after diff command when set -e is done" 
 
 echo "Done with $name"
 
-#rm -rf $originalJarExtracted
-#rm -rf $assembledJarExtracted
+rm -rf $originalJarExtracted
+rm -rf $assembledJarExtracted
 
 echo "------------------------------------------------------------------"
 echo 
