@@ -1,5 +1,6 @@
 #!/bin/bash
-set -e
+#set -e
+rm -rf target
 # branch for r16 tools release is ics_mr0 as discussed in http://groups.google.com/group/adt-dev/browse_thread/thread/67fbae0b0a4110ef
 source ./prepare-source.sh r16 ics-mr0
 source ./assemble.sh common common
