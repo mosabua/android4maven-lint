@@ -5,7 +5,10 @@
     <artifactId>ddmlib</artifactId>
     <version>@VERSION@</version>
     <packaging>jar</packaging>
-
+    <!-- 
+    Package was created and published to the Central repository by the 
+    developers of the Android4Maven project at https://sourceforge.net/projects/android4maven/
+    --> 
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
